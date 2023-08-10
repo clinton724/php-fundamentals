@@ -6,19 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="site.php" method="post">
-        <input type="text" name="student"> <br>
-        <input type="submit">
-    </form>
     <?php 
-       $grades = [
-         "Pam" => "A+",
-         "Jim" => "B-",
-         "John" => "C+",
-         "David" => "C+",
-         "Linda" => "A-"
-       ];
-       echo $grades[$_POST['student']];
+      function sayHi($name, $age) {
+        echo "Hello $name, you are $age. <br>";
+      }
+      sayHi('Romeo', 27);
+      sayHi('Lucy', 34);
+      sayHi('Linda', 45);
+      sayHi('Mason', 39);
     ?>
 </body>
 </html>
