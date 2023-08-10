@@ -7,13 +7,13 @@
 </head>
 <body>
     <?php 
-      function sayHi($name, $age) {
-        echo "Hello $name, you are $age. <br>";
+      function cube($num) {
+        return $num*$num*$num;
       }
-      sayHi('Romeo', 27);
-      sayHi('Lucy', 34);
-      sayHi('Linda', 45);
-      sayHi('Mason', 39);
+
+      $cubedValue = cube(5);
+      echo $cubedValue;
+      
     ?>
 </body>
 </html>
