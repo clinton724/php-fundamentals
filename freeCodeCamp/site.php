@@ -6,15 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="site.php" method="POST">
-       Apples: <input type="checkbox" name="fruits[]" value="apples"> <br>
-       Oranges: <input type="checkbox" name="fruits[]" value="oranges"> <br>
-       Pears: <input type="checkbox" name="fruits[]" value="pears"> <br>
-       <input type="submit">
+    <form action="site.php" method="post">
+        <input type="text" name="student"> <br>
+        <input type="submit">
     </form>
     <?php 
-       $fruits = $_POST['fruits'];
-       print_r($fruits);
+       $grades = [
+         "Pam" => "A+",
+         "Jim" => "B-",
+         "John" => "C+",
+         "David" => "C+",
+         "Linda" => "A-"
+       ];
+       echo $grades[$_POST['student']];
     ?>
 </body>
 </html>
