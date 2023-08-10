@@ -6,12 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="site.php" method="POST">
-        Password: <input type="password" name="password"> <br>
-       <input type="submit">
-    </form>
     <?php 
-       echo $_POST['password'];
+       $friends = ['Mike', 'Owen', 'Karen', 'Harry'];
+       print_r($friends);
     ?>
 </body>
 </html>
